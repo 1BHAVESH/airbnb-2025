@@ -21,6 +21,10 @@ const Navbar = () => {
 
   const {user} = useSelector((store) => store.auth)
 
+    if(user === null){
+  navigate("/login")
+}
+
   console.log(user)
 
   const hostHandler = () => {
