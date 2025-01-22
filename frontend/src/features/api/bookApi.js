@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const HOST_API = "https://airbnb-2025.vercel.app/api/v1/listing";
+const HOST_API = "https://airbnb-2025.onrender.com/api/v1/listing";
 
 export const bookApi = createApi({
   reducerPath: "bookApi",
