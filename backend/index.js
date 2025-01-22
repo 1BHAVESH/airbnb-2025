@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(cookieParser())
 
 app.use(cors({
-    origin: "https://airbnb-2025.vercel.app/",
+    origin: "https://airbnb-2025.vercel.app",
     credentials: true
 }))
 app.get("/", (req, res) => {
