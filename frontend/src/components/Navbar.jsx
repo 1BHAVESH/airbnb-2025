@@ -44,9 +44,9 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between border-b-2 w-full md:px-4 mx-auto h-16  mt-2'>
 
-        <div onClick={()=> navigate("/")} className='ml-3 cursor-pointer'>
-        <img className='w-[118px] md:ml-14' src="/public/airbnb (1).png" />
-            </div>
+      <div onClick={()=> navigate("/")} className='ml-3 cursor-pointer'>
+        <img className='w-[118px] md:ml-14' src='/public/airbnb (1).png' />
+        </div>
         
           
 
