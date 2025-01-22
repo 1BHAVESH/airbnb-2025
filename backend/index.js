@@ -23,7 +23,9 @@ app.use(cors({
     origin: "https://airbnb-2025-y2u6.vercel.app",
     credentials: true
 }))
-
+app.get("/", (req, res) => {
+    res.send("Hello World")
+})
 app.use("/api/v1/user", userRoute)
 app.use("/api/v1/listing", listingRoute)
 app.use("/api/v1/host", hostRoute)
