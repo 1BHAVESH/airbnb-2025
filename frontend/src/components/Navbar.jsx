@@ -21,9 +21,7 @@ const Navbar = () => {
 
   const {user} = useSelector((store) => store.auth)
 
-    if(user === null){
-  navigate("/login")
-}
+    
 
   console.log(user)
 
@@ -58,6 +56,7 @@ const Navbar = () => {
            
            <div className='flex mr-3 items-center gap-3'>
            <div className="hidden md:block">
+               <h1 onClick={() =>  navigate("/login")}>Login</h1>
             <h1 className='text-xl font-semibold cursor-pointer hover:text-red-500 text-gray-500' onClick={hostHandler}>Airbnb your home</h1>
            </div>
       {user &&   <div className='cursor-pointer '>
